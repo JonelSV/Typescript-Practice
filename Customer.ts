@@ -4,6 +4,7 @@ class Customer {
     lastName: string;
     rank: string;
     loyalty: string;
+    private secret: string;
 
 
     constructor ( fName: string, lName: string, position: string, allegiance: string) {
@@ -11,11 +12,22 @@ class Customer {
         this.lastName = lName;
         this.rank = position;
         this.loyalty = allegiance;
+        
     }
+
+    // GETTER AND SETTER = HOW TO DEFINE
+
+    public getSecret(): string {
+        return this.secret;
+    }
+
+
+
 
 }
 
 let myCustomer = new Customer("Julius", "Cesar", "Imperator", "Devoted Roman");
+let romanCustomer = new Customer("Brutus", "Junius", "Consul", "Roman")
 
 // myCustomer.firstName = "Julius Augustus";
 // myCustomer.lastName = "Cesar"
