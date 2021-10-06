@@ -8,4 +8,19 @@ var myData = 50.0;
 myData = false;
 myData = "Vladimir";
 myData = 19;
-console.log("data type any can be used for any generic data input like " + myData + " just like so");
+console.log(" " + found + "\"data type any can be used for any generic data input like \" + " + myData + " + \" just like so\"");
+// ========== IMPORTANT
+// By default tsc will sitll generate a .js file even though errors are found.
+// prevent this with a  COMPILER  FLAG
+// tsc-noEmitOnError hello.ts
+for (var i = 0; i < 5; i++) {
+    console.log("iteration = " + i);
+}
+var reviews = [5, 5, 4.5, 1, 3, 2];
+var total = 0;
+for (var i = 0; i < reviews.length; i++) {
+    console.log("revies sub i = " + reviews[i]);
+    total += reviews[i];
+}
+var average = total / reviews.length;
+console.log("the average total reviews is : " + average);
