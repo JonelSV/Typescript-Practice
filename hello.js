@@ -1,0 +1,11 @@
+console.log("Hello World");
+console.log("typescript is a strongly typed language which is a superset of JS");
+console.log("This is a practice of my typescript skills" + "First time trying this");
+var found = true;
+var grade = 99.5;
+var firstName = "Makarov";
+var myData = 50.0;
+myData = false;
+myData = "Vladimir";
+myData = 19;
+console.log("data type any can be used for any generic data input like " + myData + " just like so");
