@@ -8,12 +8,13 @@ class Customer {
     private age: number;
 
 
-    constructor ( fName: string, lName: string, position: string, allegiance: string, age: number) {
+    constructor ( fName: string, lName: string, position: string, allegiance: string, age: number, secret: string) {
         this.firstName = fName;
         this.lastName = lName;
         this.rank = position;
         this.loyalty = allegiance;
         this.age = age;
+        this.secret = secret;
     }
 
     // GETTER AND SETTER = HOW TO DEFINE
@@ -21,6 +22,10 @@ class Customer {
     public getSecret(): string {
         return this.secret;
     }
+
+    public setSecret(secret: string) : void {
+        this.secret = secret;
+    } 
 
     //setter
     public setAget(age: number) : void {
@@ -33,8 +38,8 @@ class Customer {
 
 }
 
-let myCustomer = new Customer("Julius", "Cesar", "Imperator", "Devoted Roman", 66);
-let romanCustomer = new Customer("Brutus", "Junius", "Consul", "Roman", 44)
+let myCustomer = new Customer("Julius", "Cesar", "Imperator", "Devoted Roman", 66, "cursed");
+let romanCustomer = new Customer("Brutus", "Junius", "Consul", "Roman", 44, "has a lot of debt")
 
 console.log(romanCustomer.getAge())
 

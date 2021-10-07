@@ -1,3 +1,4 @@
+"use strict";
 var sports = ["Golf", "Basketball", "MMA", "Boxing", "Football"];
 // FOR OF LOOP  
 for (var _i = 0, sports_1 = sports; _i < sports_1.length; _i++) {
@@ -17,3 +18,4 @@ for (var _a = 0, sports2_1 = sports2; _a < sports2_1.length; _a++) {
     var displaySports2 = sports2_1[_a];
     console.log(displaySports2);
 }
+// ============ Classes in Typescript ======
