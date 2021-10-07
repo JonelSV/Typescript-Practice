@@ -14,3 +14,10 @@ let myRectangle = new Rectangle_1.Rectangle(0, 0, 3, 7);
 console.log(myShape.getInfo());
 console.log(myCircle.getInfo());
 console.log(myRectangle.getInfo());
+let theShapes = [];
+theShapes.push(myShape);
+theShapes.push(myCircle);
+theShapes.push(myRectangle);
+for (let tempShape of theShapes) {
+    console.log(tempShape.getInfo());
+}
