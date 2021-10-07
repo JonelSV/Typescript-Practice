@@ -3,6 +3,7 @@
 // modifier all together in one.
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Soldier = void 0;
+// TS OOP only supports single inheritance but can support multiple interfaces
 // tsc --build --clean   <========== removes old js code
 var Soldier = /** @class */ (function () {
     function Soldier(_firstName, _lastName) {

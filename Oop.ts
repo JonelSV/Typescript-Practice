@@ -1,6 +1,8 @@
 // TS has a shortcut way of creating consturctors, defines properties and assigns them then with access
 // modifier all together in one.
 
+// TS OOP only supports single inheritance but can support multiple interfaces
+
 // tsc --build --clean   <========== removes old js code
 
 export class Soldier {
