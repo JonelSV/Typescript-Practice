@@ -5,14 +5,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Soldier = void 0;
 // TS OOP only supports single inheritance but can support multiple interfaces
 // tsc --build --clean   <========== removes old js code
-var Soldier = /** @class */ (function () {
-    function Soldier(_firstName, _lastName) {
+class Soldier {
+    constructor(_firstName, _lastName) {
         this._firstName = _firstName;
         this._lastName = _lastName;
     }
-    return Soldier;
-}());
+}
 exports.Soldier = Soldier;
-var PrimusPilus = new Soldier("Lucius", "Vorenus");
+let PrimusPilus = new Soldier("Lucius", "Vorenus");
 console.log(PrimusPilus);
 // TS supports modules to import/export classes, functions, variables

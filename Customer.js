@@ -1,6 +1,6 @@
 "use strict";
-var Customer = /** @class */ (function () {
-    function Customer(fName, lName, position, allegiance, age, secret) {
+class Customer {
+    constructor(fName, lName, position, allegiance, age, secret) {
         this.firstName = fName;
         this.lastName = lName;
         this.rank = position;
@@ -10,23 +10,22 @@ var Customer = /** @class */ (function () {
     }
     // GETTER AND SETTER = HOW TO DEFINE
     // Getter
-    Customer.prototype.getSecret = function () {
+    getSecret() {
         return this.secret;
-    };
-    Customer.prototype.setSecret = function (secret) {
+    }
+    setSecret(secret) {
         this.secret = secret;
-    };
+    }
     //setter
-    Customer.prototype.setAget = function (age) {
+    setAget(age) {
         this.age = age;
-    };
-    Customer.prototype.getAge = function () {
+    }
+    getAge() {
         return this.age;
-    };
-    return Customer;
-}());
-var myCustomer = new Customer("Julius", "Cesar", "Imperator", "Devoted Roman", 66, "cursed");
-var romanCustomer = new Customer("Brutus", "Junius", "Consul", "Roman", 44, "has a lot of debt");
+    }
+}
+let myCustomer = new Customer("Julius", "Cesar", "Imperator", "Devoted Roman", 66, "cursed");
+let romanCustomer = new Customer("Brutus", "Junius", "Consul", "Roman", 44, "has a lot of debt");
 console.log(romanCustomer.getAge());
 // myCustomer.firstName = "Julius Augustus";
 // myCustomer.lastName = "Cesar"
