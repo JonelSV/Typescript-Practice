@@ -1,3 +1,7 @@
+
+// use ABSTRACT keyword to create abstarct class
+
+
 export class Shape {
     
     constructor(private _x: number, private _y: number) {
