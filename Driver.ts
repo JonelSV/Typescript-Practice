@@ -27,6 +27,8 @@ theShapes.push(myRectangle);
 
 for (let tempShape of theShapes) {
     console.log(tempShape.getInfo())
+    console.log(tempShape.calculateArea())
+    console.log();
 }
         
   
