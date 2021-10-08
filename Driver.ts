@@ -11,6 +11,9 @@
 import { Shape } from './Shape';
 import { Circle } from './Circle';
 import { Rectangle } from './Rectangle'
+import { CricketCoach } from './CricketCoach';
+import { GolfCoach } from './GolfCoach';
+import { Coach } from './Coach';
 
 
 let myCircle = new Circle(5,10,20);
@@ -29,6 +32,20 @@ for (let tempShape of theShapes) {
     console.log(tempShape.getInfo())
     console.log(tempShape.calculateArea())
     console.log();
+
+let myCricketCoach = new CricketCoach();
+let myGolfCoach = new GolfCoach();
+
+let theCoaches: Coach[] = []; 
+
+theCoaches.push(myCricketCoach);
+theCoaches.push(myGolfCoach);
+
+for(let tempCoach of theCoaches) {
+
+    console.log(tempCoach.getDailyWorkout());
+}
+
 }
         
   
