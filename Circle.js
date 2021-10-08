@@ -10,5 +10,14 @@ class Circle extends Shape_1.Shape {
     getInfo() {
         return super.getInfo() + `, radius = ${this._radius}`;
     }
+    get radius() {
+        return this._radius;
+    }
+    set radius(value) {
+        this._radius = value;
+    }
+    calculateArea() {
+        return Math.PI * Math.pow(this._radius, 2);
+    }
 }
 exports.Circle = Circle;
