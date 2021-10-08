@@ -23,4 +23,8 @@ export class Rectangle extends Shape{
     public set width(value: number) {
         this._width = value;
     }
+
+    calculateArea(): number {
+       return this._width * this._length;
+    }
 } 

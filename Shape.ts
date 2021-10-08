@@ -2,7 +2,7 @@
 // use ABSTRACT keyword to create abstarct class
 
 
-export class Shape {
+export abstract class Shape {
     
     constructor(private _x: number, private _y: number) {
 
@@ -26,5 +26,7 @@ export class Shape {
         this._x = value;
     }
 
+
+abstract calculateArea(): number;
 
 }

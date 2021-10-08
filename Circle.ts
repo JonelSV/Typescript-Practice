@@ -17,4 +17,8 @@ export class Circle extends Shape {
     public set radius(value: number) {
         this._radius = value;
     }
+
+    calculateArea() : number {
+        return Math.PI * Math.pow(this._radius, 2);
+    }
 }
